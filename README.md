@@ -1,3 +1,9 @@
+# CHURN PREDICTION IN TELECOM SECTOR
+## Gamma Team
+1. Muhammad Raihan
+2. Rahmah Anggita Fitri
+3. Sandra Helenna Mulyadi
+
 # Business Understanding
 Dataset ini berisi informasi mengenai pelanggan yang dapat digunakan untuk memprediksi perilaku mereka dalam rangka meningkatkan tingkat retensi. Meningkatkan retensi berarti menerapkan strategi dan tindakan yang dilakukan oleh perusahaan untuk memastikan pelanggan tetap menggunakan produk atau layanan mereka dalam jangka panjang.
 Tujuan dari inisiatif ini adalah untuk mengurangi tingkat churn (penghentian langganan) dan mempertahankan pelanggan yang ada, karena menurut Tjiptono (2009) menjaga pelanggan setia sering kali lebih efektif dan hemat biaya dibandingkan menarik pelanggan baru.
@@ -28,9 +34,46 @@ Alasan: Jika tujuan utama adalah meminimalkan churn, fokus utamanya adalah memas
 
 # Exploratory Data Analysis
 Berikut feature dari dataset yang kami miliki :
+
 ![image](https://github.com/user-attachments/assets/2638aec5-4020-46b8-9b86-87c83ae1cbe3)
 
+Dari dataset tersebut, kami melakukan data cleaning sebelum melakukan data analysis dan modelling. Berikut tahapan cleaning yang kami lakukan :
+1. Missing values
+2. Outliers
+3. Data formatting
+4. Data duplicates
+
+# Data Analysis
+Dalam tahapan ini, kami melakukan beberapa analisis terhadap dataset. Diantaranya adalah :
+1. Data distribution
+2. Churn distribution
+3. Demographic distribution (Gender dan Seniior Citizen)
+4. Hubungan tingkat churn terhadap feature pada dataset
+5. Bivariate analysis pada `MonthlyCharges` x `TotalCharges` dan `TotalCharges` x `Contract`
+6. Korelasi variabel kategorik terhadap churn
+7. Korelasi variabel numerik terhadap churn
+
 # Tableau Dashboard
+Hasil dari Data Analysis, kami tuangkan ke dalam Dashboard yang dapat memberikan informasi secara menyeluruh terhadap dataset. Sehingga pembaca bisa lebih mudah memahami dataset. Berikut dashboard yang kami buat 
 ![image](https://github.com/user-attachments/assets/e045cbc1-d3af-4bd4-ad78-78d22588aa5d)
 
-Dashboard diatas berisikan informasi dari dataset yang kami miliki. Dapat dilihat bahwa
+# Feature Engineering
+Hasil dari korelasi antar variabel terhadap churn, kami memutuskan untuk melakukan drop terhadap 3 variabel yaitu `CustomerID`, `gender`, `PhoneService`.
+Selain itu, kami juga melakukan pengujian terhadap imbalance dataset yang hasilnya bahwa dataset ini adalah **imbalance** dengan nilai :
+- Nilai Churn 0 = 73.42%
+- Nilai Churn 1 = 26.58%
+
+# Modelling
+Pada tahapan ini, kami menguji beberapa model untuk mendapatkan nilai metrics yang paling baik. Kami juga membuat model panalized dan oversampling karena dataset imbalance.
+Setelah itu, kami melakukan hyperparameter tunning pada model terbaik yang hasilnya adalah :
+
+- Model : Logistic Regression
+- Oversampling : BorderlineSMOTE
+- Parameter C : 2
+- Parameter Penalty : l1
+- Parameter Solver : saga
+- Parameter Class Weight = balanced
+
+Model tersebut menghasilkan **recall sebesar 83.96%**
+
+# Thank You! 
