@@ -76,4 +76,12 @@ Setelah itu, kami melakukan hyperparameter tunning pada model terbaik yang hasil
 
 Model tersebut menghasilkan **recall sebesar 83.96%**
 
+
+# Let me know if you need any further adjustments!
+**Member:**
+1. Muhammad Raihan (muhammadraihan4@gmail.com)
+2. Rahmah Anggita Fitri (rahmahanggita@gmail.com)
+3. Sandra Helenna Mulyadi (sandrahln43@gmail.com)
+
+
 # Thank You! 
