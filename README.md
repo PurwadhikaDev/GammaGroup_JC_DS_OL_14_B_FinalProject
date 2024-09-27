@@ -1,8 +1,8 @@
 # CHURN PREDICTION IN TELECOM SECTOR
 ## Gamma Team
-1. Muhammad Raihan
-2. Rahmah Anggita Fitri
-3. Sandra Helenna Mulyadi
+1. Muhammad Raihan (muhammadraihan4@gmail.com)
+2. Rahmah Anggita Fitri (rahmahanggita@gmail.com)
+3. Sandra Helenna Mulyadi (sandrahln43@gmail.com)
 
 # Business Understanding
 Dataset ini berisi informasi mengenai pelanggan yang dapat digunakan untuk memprediksi perilaku mereka dalam rangka meningkatkan tingkat retensi. Meningkatkan retensi berarti menerapkan strategi dan tindakan yang dilakukan oleh perusahaan untuk memastikan pelanggan tetap menggunakan produk atau layanan mereka dalam jangka panjang.
@@ -78,10 +78,5 @@ Model tersebut menghasilkan **recall sebesar 83.96%**
 
 
 # Let me know if you need any further adjustments!
-**Member:**
-1. Muhammad Raihan (muhammadraihan4@gmail.com)
-2. Rahmah Anggita Fitri (rahmahanggita@gmail.com)
-3. Sandra Helenna Mulyadi (sandrahln43@gmail.com)
-
 
 # Thank You! 
